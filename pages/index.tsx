@@ -16,6 +16,7 @@ export default function Home({ query }) {
   const [pause, setPause] = useState(false)
   const [playing, setPlaying] = useState(false)
   const [showBuff, setShowBuff] = useState(false)
+  const [error, setError] = useState<string>(null)
   const [timeInputValue, setTimeInputValue] = useState(initialInputValue)
 
   const intervalRef = useRef<NodeJS.Timeout>()
@@ -56,8 +57,14 @@ export default function Home({ query }) {
   }
 
   const handleSubmit = (event: React.MouseEvent<HTMLButtonElement>) => {
-    const time = getSecondsFromTimeInput(timeInputValue.timeInput)
     event.preventDefault()
+
+    const time = getSecondsFromTimeInput(timeInputValue.timeInput)
+    if (time <= 0) {
+      setError('Please, select a time to start')
+      return
+    }
+    setError(null)
     setShowBuff(false)
     setPlaying(true)
     playVideo()
@@ -107,9 +114,12 @@ export default function Home({ query }) {
                     playing ? 'cursor-not-allowed opacity-20' : 'cursor-pointer'
                   }`}
                 >
-                  {playing ? 'Reset to enable this button' : 'Save time'}
+                  Start
                 </button>
               </div>
+              {error ? (
+                <span className="text-gray-50 bg-red-600 px-2 py-1">{error}</span>
+              ) : null}
             </div>
           </div>
         </section>

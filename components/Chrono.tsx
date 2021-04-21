@@ -62,7 +62,7 @@ const fadeout = keyframes`
   }
 `
 
-const StyledCount = styled.div<{ timeToShow: number }>`
+const StyledCount = styled.span<{ timeToShow: number }>`
   position: absolute;
   width: 100%;
   text-align: center;

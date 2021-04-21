@@ -1,7 +1,5 @@
 # SportBuff
 
-[Github repo](https://github.com/rubenbase/vidquizz)
-
 ## Want to see it live?
 
 Go [here](https://vidquizz.vercel.app/)

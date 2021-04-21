@@ -10,7 +10,7 @@ If you append this param query at the end of the url
 /?buff=<id>
 ```
 
-being `id` a number between _1-5_, you will fetch different data when the Buff shows up.
+being `<id>` a number between _1-5_, you will fetch different data when the Buff shows up.
 
 ## Tech/Libs and why I used them
 

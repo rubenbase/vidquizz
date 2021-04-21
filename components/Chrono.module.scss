@@ -1,0 +1,13 @@
+$w: 8;
+$d: 44;
+
+.chrono {
+  width: $d + px;
+  height: $d + px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 999px;
+  box-shadow: inset 0 0 0 $w + px rgba(255, 255, 255, 0.5);
+}

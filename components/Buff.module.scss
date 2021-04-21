@@ -1,0 +1,45 @@
+$light-transparent-color: rgba(235, 235, 235, 0.8);
+$light-color: #eeeeee;
+$dark-color: #333333;
+$success-color: #078827;
+$dark-transparent-color: rgba(41, 41, 41, 0.7);
+
+.lightBackground {
+  background-color: $light-color;
+  background: linear-gradient(
+    to right,
+    $light-color 5%,
+    $light-transparent-color 20%,
+    $light-transparent-color 100%
+  );
+}
+
+.darkBackground {
+  background-color: $dark-transparent-color;
+}
+
+.success {
+  background-color: $success-color;
+}
+
+.answerBorderRadius {
+  border-radius: 9999px;
+}
+
+.author {
+  position: relative;
+  border-radius: 25px 25px 25px 0;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    background-color: transparent;
+    bottom: -50px;
+    height: 50px;
+    width: 25px;
+    border-top-left-radius: 10px;
+    box-shadow: 0 -25px 0 0 $light-color;
+    overflow: hidden;
+  }
+}

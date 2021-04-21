@@ -58,7 +58,7 @@ Most of the configuration logic is within the Index page, in that file we track 
 
 In this page we load the:
 
-- TimeInput | Controls the time that you can set up in order to show the Buff. It's limited by the HTML time input limits. In case we needed to setup more time than the allowed then I could create a custom one but for this example it was enough. For web it's styled as requeted on the README and if you don't select a time a show will appear telling you what happened.
+- TimeInput | Controls the time that you can set up in order to show the Buff. It's limited by the HTML time input limits. In case we needed to setup more time than the allowed then I could create a custom one but for this example it was enough. For web it's styled as requested on the README and if you don't select a time an error message will appear telling you what went wrong.
 
 Once you start the time the Start button gets disabled and the Buff will show up at the time that you stated. To introduce a new value you need to reset by clicking the Reset button.
 

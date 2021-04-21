@@ -39,7 +39,7 @@ cd <repoName>
 and run the project locally.
 
 ```
-yarn dev
+yarn && yarn dev
 ```
 
 After that a window with the app should appear on your browser.

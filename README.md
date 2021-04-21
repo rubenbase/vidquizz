@@ -76,9 +76,9 @@ The rest of the root files are mostly for config purposes.
 
 - It took me more than 5 hours, I wanted it to be as close as possible as the picture.
 
-- I didn't know what the yellow circle with the number was, I thought maybe it was the Buff number or the number of possible answeres, I don't know.
+- I didn't know what the yellow circle with the number was, I thought maybe it was the Buff number or the number of possible answers, I don't know, so I left it static.
 
-- For time purposes I didn't implement perfect responsiveness and details like for example truncating the author div so it shows ... at the end if it is too long and this kind of UI improvements.
+- For time purposes and no designs I didn't implement perfect responsiveness and details like for example truncating the author div so it shows ... at the end if it is too long and this kind of UI improvements.
 
 Hope you like it,
 Ruben
